@@ -19,7 +19,7 @@ st.subheader("Factory-to-Customer Shipping Route Efficiency Analysis")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/Nassau Candy Distributor.csv')
+    df = pd.read_csv('Nassau Candy Distributor.csv')
     
     # Date conversion
     df['Order Date'] = pd.to_datetime(df['Order Date'], format='%d-%m-%Y')
